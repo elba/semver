@@ -1,0 +1,11 @@
+package semver
+
+sourcedir = src
+
+modules = Semver,
+          Semver.Constraint,
+          Semver.Interval,
+          Semver.Range,
+          Semver.Version
+
+opts = "-p containers -p lightyear"

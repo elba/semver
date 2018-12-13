@@ -1,0 +1,18 @@
+[package]
+name = "elba/semver"
+version = "0.1.0"
+authors = ["David Cao <david@cao.st>"]
+
+[dependencies]
+
+[targets.lib]
+path = "src"
+mods = [
+    "Semver",
+    "Semver.Version",
+    "Semver.Interval",
+    "Semver.Range",
+    "Semver.Constraint",
+]
+idris_opts = ["-p", "containers", "-p", "lightyear"]
+
